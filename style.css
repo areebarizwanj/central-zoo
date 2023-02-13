@@ -1,0 +1,145 @@
+.nav-bar{
+    background-color: rgba(0, 0, 0, 0.667);
+    color: white;
+    
+}
+.navbar-list{
+    display: inline;
+    display: flex;
+    font-family: cursive;
+    font-size: larger;
+    
+  margin-left: 20px;
+}
+.z:hover{
+    color: white;
+}
+#one{
+    height: 500px;
+    width: auto;
+ 
+    
+}
+.a{
+    font-size: 70px;
+    font-weight: 700;
+color: rgb(14, 13, 13);
+
+}
+.m{
+    text-align: center;
+    height: 150px;
+  margin: 10px;
+}
+.ooo{
+    font-family: cursive;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgba(246, 190, 121, 0.334);
+}
+.o{
+    font-family: cursive;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: rgba(246, 190, 121, 0.334);
+    display: flex;
+    flex-direction: row;
+}
+.oo{
+    display: flex;
+    flex-direction: column;
+}
+
+.two{
+    position: absolute;
+    top: 111px;
+    left: 1000px;
+}
+.b{
+    font-size: 50px;
+    font-weight: 700;
+color: rgb(17, 16, 16);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.foot{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+margin: 0px;
+font-family: cursive;
+list-style-type: none;
+text-align: center;
+font-size: 1.2rem;
+}
+a{
+    color: white  !important;
+    text-decoration: none !important;
+}
+
+.background {
+    background-image: url(./bg.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  #blur {
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(8px); 
+    height: 100%;
+    width: 100%;
+  }
+ 
+  .a{
+    font-size: 18px;
+  }
+  a:hover{
+    
+        background-color: rgb(215, 162, 37);
+      
+  }
+ ul li a:hover{
+    
+    background-color: rgb(215, 162, 37);
+    border-radius: 20px;
+  
+}
+.a{
+background-color: transparent;
+
+}
+.a:hover{
+  background-color: rgb(215, 162, 37);
+}
+.dropdown-item:hover{
+    background-color: rgb(215, 162, 37)!important;
+}
+button{
+    background-color: rgb(215, 162, 37)!important;
+}
+nav{
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+@media only screen and (max-width: 300px) {
+    .newsletter {
+       display: block;
+       font-size: 40% !important ;
+       color: brown;
+     }
+    }
