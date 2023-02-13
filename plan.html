@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .columns {
+      float: left;
+      width: 33.3%;
+      padding: 8px;
+    }
+
+    .price {
+      list-style-type: none;
+      border: 1px solid #eee;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    .price:hover {
+      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+    }
+
+    .price .header {
+      background-color: #111;
+      color: white;
+      font-size: 25px;
+    }
+
+    .price li {
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .price .grey {
+      background-color: #eee;
+      font-size: 20px;
+    }
+
+    .button {
+      background-color: rgb(215, 162, 37) !important;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .columns {
+        width: 100%;
+      }
+    }
+  </style>
+  <style>
+    @media only screen and (min-width:0px)and (max-width: 500px) {
+ 
+   .zz{
+   
+   font-size: 40%;
+    width: auto;
+    height: auto;
+   }
+     .news{
+       width: auto;
+        font-size: 50% !important ;
+      }
+   
+ }
+ </style>
+</head>
+
+<body style="font-family:cursive;">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:sticky;top: 0px;z-index: 999;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./kisspng-san-diego-zoo-logo-giant-panda-los-angeles-zoo-san-diego-5adf4910dd43e1.6223809615245826729063.png"
+          alt="" width="60px" height="35px" class="d-inline-block align-text-top font">
+        Central Zoo
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav"
+        style="margin-left: 220px; font-family: cursive; padding: 05px;">
+        <ul class="navbar-nav " style="text-align: center ; padding: 5px;">
+          <li class="nav-item" style="padding:5px;">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+
+          <li class="nav-item" style="padding:5px;">
+            <a class="nav-link active" href="plan.html">Safari</a>
+          </li>
+          <li class="nav-item" style="padding:5px;">
+            <a class="nav-link active" href="eventsorganized.html">Events Organized</a>
+          </li>
+          <li class="nav-item active" style="padding:5px;">
+            <a class="nav-link active" href="aboutus.html">About Us</a>
+          </li>
+
+          <li class="nav-item active" style="padding:5px;">
+            <a class="nav-link active" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item active" style="padding:5px;">
+            <a class="nav-link active" href="feedback.html">Feedback & Query</a>
+          </li>
+          <li class="nav-item dropdown" style="padding:5px; ">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" style="color: white; ">
+              Animals
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+              style="background-color: rgba(0, 0, 0, 0.712); ">
+              <li><a class="dropdown-item a" style="color: rgb(243, 239, 232)
+                    ;" href="birds.html">Bird</a></li>
+              <li><a class="dropdown-item a" style="color: rgb(238, 234, 226)
+                        ;" href="wateranimals.html">Water Animals</a></li>
+              <li><a class="dropdown-item a" style="color: rgb(240, 238, 236)
+                        ;" href="animals.html">Animals</a></li>
+            </ul>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <h2 style="text-align:center; font-size: 1.2rem;">Zoo Bookings</h2>
+  <p style="text-align:center; font-size: 1.2rem;">Book a day Safari with us</p>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header">Basic</li>
+      <li class="grey">$ 9.99 / day</li>
+      <li>5 hours</li>
+      <li>1 member</li>
+      <li>No dinner</li>
+      <li class="grey"><a href="./plan.html" class="button">Sign Up</a></li>
+    </ul>
+  </div>
+  <div class="columns">
+    <ul class="price">
+      <li class="header">Couple</li>
+      <li class="grey">$ 25.99 / day</li>
+      <li>7 hours</li>
+      <li>2 members</li>
+      <li>Dinner</li>
+
+      <li class="grey"><a href="./plan.html" class="button">Sign Up</a></li>
+    </ul>
+  </div>
+  <div class="columns">
+    <ul class="price">
+      <li class="header">Family</li>
+      <li class="grey">$ 49.99 / day</li>
+      <li>7 hours</li>
+      <li>upto 6 members</li>
+      <li>Dinner</li>
+
+      <li class="grey"><a href="./plan.html" class="button">Sign Up</a></li>
+    </ul>
+  </div>
+
+  <h4 style="text-align: center; font-size:1.4rem ;">Book a Safari Day Here Now!</h4>
+  <div class="mt-10 sm:mt-0">
+    <div class="md:grid md:grid-cols-3 md:gap-6">
+      <div class="md:col-span-1">
+        <div class="px-4 sm:px-0">
+          <h2 class="text-lg font-medium leading-8 "
+            style="text-align:center;color: black;font-family: cursive; font-weight: 900; font-size:1.9em ;">Personal
+            Information</h2>
+
+        </div>
+      </div>
+      <div>
+        <form action="#" method="POST">
+          <div class="shadow overflow-hidden sm:rounded-md">
+            <div class="px-4 py-5 bg-white sm:p-6">
+              <div class="grid grid-cols-6 gap-6">
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+                  <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+                  <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+
+                <div class="col-span-6 sm:col-span-4">
+                  <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
+                  <input type="text" name="email-address" id="email-address" autocomplete="email"
+                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+                  <select id="country" name="country" autocomplete="country-name"
+                    class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option>Pakistan</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                  </select>
+                </div>
+
+                <div class="col-span-6">
+                  <label for="street-address" class="block text-sm font-medium text-gray-700">Street address</label>
+                  <input type="text" name="street-address" id="street-address" autocomplete="street-address"
+                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+
+                <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                  <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                  <input type="text" name="city" id="city" autocomplete="address-level2"
+                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+
+                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                  <label for="region" class="block text-sm font-medium text-gray-700">State / Province</label>
+                  <input type="text" name="region" id="region" autocomplete="address-level1"
+                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+
+                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                  <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP / Postal code</label>
+                  <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
+                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                  <label for="postal-code" class="block text-sm font-medium text-gray-700">Date</label>
+                  <input type="datetime-local" name="postal-code" id="postal-code" autocomplete="postal-code"
+                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="country" class="block text-sm font-medium text-gray-700">Pakage</label>
+                  <select id="country" name="country" autocomplete="country-name"
+                    class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option>Basic</option>
+                    <option>Couple</option>
+                    <option>Family</option>
+                  </select>
+                </div>
+                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                  <label for="postal-code" class="block text-sm font-medium text-gray-700">Credit Card </label>
+                  <input type="tel" name="postal-code" id="postal-code" autocomplete="postal-code"
+                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+
+              </div>
+            </div>
+            <script>
+
+              function myFunction() {
+                alert("Thank You!");
+              }
+
+            </script>
+            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+              <button type="submit"
+                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                onclick="myFunction()">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div style="background-image:url(./animals/tiger.jpeg) ;">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <h2 class="text-3xl font-extrabold tracking-tight text-black-600 sm:text-3xl">
+        <span class="block text-white news">SIGN UP FOR OUR NEWSLETTER</span>
+
+        <span class="block news" style="color:bisque;">Our email newsletter keeps you up to date with what's happening at the
+          Zoo.</span>
+        <span class="text-2xl news font-semibold tracking-tight text-gray-900 sm:text-2xl"><input type="text"
+            placeholder="Enter Your E-mail"></span>
+
+      </h2>
+
+      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+        <div class="inline-flex rounded-md shadow">
+          <a href="./aboutus.html"
+            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white a">
+            Sign up</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<hr>
+  <footer>
+    <div class="foot">
+      <nav class="row">
+      
+        <nav class="col" >
+          
+          <h6>Visit</h6>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="./plan.html">Plan Your Day</a></li>
+          <li><a href="contactus.html">Zoo Map</a></li>
+        </nav>
+        <nav class="col">
+
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="./feedback.html">Feedback And Query</a></li>
+          <li><a href="animals.html">Animals</a></li>
+
+        </nav>
+        <nav class="col" >
+          <li><a href="animals.html">Live:Have fun in your visit</a></li>
+          <li><a href="animals.html">Love:Donate for the animals</a></li>
+          <li><a href="animals.html">Learn:Get to know the animals</a></li>
+
+        </nav>
+        <nav class="col" >
+          <li>Central Zoo</li>
+          <li> 285 067-39 282/5282 9273 999</li>
+          <li>email@animalkingdomzoo.com</li>
+        </nav>
+
+      </nav>
+  </footer>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
